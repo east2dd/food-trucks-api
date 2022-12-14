@@ -42,10 +42,14 @@ gem "geocoder"
 # serialize json
 gem "fast_jsonapi"
 
-# Testing framework
 group :development, :test do
+  # Testing framework
   gem 'rspec-rails', '~> 6.0.0'
   gem "factory_bot_rails", "~> 6.2.0"
+  gem "faker"
+
+  # Debugging tool
+  gem "pry-rails"
 end
 
 group :development, :test do
@@ -57,4 +61,3 @@ group :development do
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
   # gem "spring"
 end
-
